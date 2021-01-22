@@ -12,6 +12,7 @@
 :-------------------------:
 | electron-admin-element-vue-v2.0.0-win32-ia32-setup.exe [Github](https://github.com/lqsong/electron-admin-element-vue/releases) [Gitee](https://gitee.com/lqsong/electron-admin-element-vue/releases)  |
 | electron-admin-element-vue-v2.0.0-win32-x64-setup.exe [Github](https://github.com/lqsong/electron-admin-element-vue/releases) [Gitee](https://gitee.com/lqsong/electron-admin-element-vue/releases) |
+| electron-admin-element-vue-v2.0.0-mac.dmg [Github](https://github.com/lqsong/electron-admin-element-vue/releases) [Gitee](https://gitee.com/lqsong/electron-admin-element-vue/releases) |
 
 
 |图片预览|
