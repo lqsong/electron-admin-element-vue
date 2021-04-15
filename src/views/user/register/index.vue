@@ -24,7 +24,7 @@
                 </div>              
             </el-form-item>
 
-            <el-alert v-if="errorMsg !== '' && typeof errorMsg !== 'undefined' &&  !submitLoading" :title="errorMsg" type="error" show-icon :closable="false" />
+            <el-alert v-if="(errorMsg !== '' && typeof errorMsg !== 'undefined' &&  !submitLoading)" :title="errorMsg" type="error" show-icon :closable="false" />
             
         </el-form>
     </div>
