@@ -1,8 +1,7 @@
 <template>
     <div id="indexlayout">
         <left
-          :collapsed="collapsed"
-          :tabNavEnable="tabNavEnable"
+          :collapsed="collapsed"          
           :topNavEnable="topNavEnable"
           :belongTopMenu="belongTopMenu"
           :defaultActive="defaultActive"
@@ -18,6 +17,7 @@
 
             <right-top
               :collapsed="collapsed"
+              :tabNavEnable="tabNavEnable"
               :topNavEnable="topNavEnable"
               :belongTopMenu="belongTopMenu"
               :toggleCollapsed="toggleCollapsed"
