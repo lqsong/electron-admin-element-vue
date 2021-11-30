@@ -2,7 +2,7 @@
     <el-dropdown  @command="onMenuClick">
         <a class="indexlayout-top-usermenu ant-dropdown-link" @click="e => e.preventDefault()">
             {{currentUser.name}}
-            <i class="el-icon-arrow-down el-icon--right"></i>
+           <icon-svg type="arrow-down"></icon-svg>
         </a>
         <template #dropdown>
             <el-dropdown-menu>
@@ -21,6 +21,7 @@ import { computed, ComputedRef, defineComponent } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import IconSvg from "@/components/IconSvg";
 import { StateType as UserStateType, CurrentUser } from "@/store/user";
 interface RightTopUserSetupData {
     t: (key: string | number) => string;
@@ -29,6 +30,9 @@ interface RightTopUserSetupData {
 }
 export default defineComponent({
     name: 'RightTopUser',
+    components: {
+      IconSvg
+    },
     setup(): RightTopUserSetupData {
         const store = useStore<{user: UserStateType}>();
         const router = useRouter();

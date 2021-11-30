@@ -15,7 +15,7 @@
         }"
         @click="show" 
     >
-        <i class="el-icon-setting" :style="{ fontSize: '20px', color: '#fcfcfc' }"></i>
+        <icon-svg type="set" :style="{ fontSize: '20px', color: '#fcfcfc' }"></icon-svg>
     </div>
     <el-drawer
         custom-class="indexlayout-settings"
@@ -41,6 +41,7 @@
 <script lang="ts">
 import { computed, ComputedRef, defineComponent, Ref, ref } from "vue";
 import { useStore } from 'vuex';
+import IconSvg from "@/components/IconSvg";
 import { StateType as GlobalStateType } from '@/store/global';
 
 interface SettingsSetupData {
@@ -58,6 +59,9 @@ interface SettingsSetupData {
 
 export default defineComponent({
     name: 'Settings',
+    components: {
+      IconSvg
+    },
     setup(): SettingsSetupData {
         
         const store = useStore<{global: GlobalStateType}>(); 
