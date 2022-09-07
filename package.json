@@ -27,9 +27,9 @@
     "lodash.debounce": "^4.0.8",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
-    "vue": "^3.2.31",
-    "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.14",
+    "vue": "^3.2.38",
+    "vue-i18n": "~9.1.10",
+    "vue-router": "^4.1.5",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
@@ -71,6 +71,9 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
+  },
+  "resolutions": {
+    "vue-cli-plugin-electron-builder/electron-builder": "^23.0.3"
   },
   "keywords": [
     "electron",
